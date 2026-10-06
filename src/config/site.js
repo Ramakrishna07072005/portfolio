@@ -33,8 +33,8 @@ export const siteConfig = {
   socials: {
     // LinkedIn profile from your resume
     linkedin: "https://www.linkedin.com/in/ramakrishna-k-5548b526a",
-    // Update with your GitHub profile URL once your account is ready
-    github: "https://github.com/Ramakrishna-K",
+    // GitHub profile
+    github: "https://github.com/Ramakrishna07072005",
   },
 
   // Resume Download Settings
@@ -50,7 +50,7 @@ export const siteConfig = {
   // Set enabled to true to fetch public repositories directly from GitHub.
   githubFeed: {
     enabled: true,
-    username: "Ramakrishna-K", // Change this to your exact GitHub username
+    username: "Ramakrishna07072005",
     limit: 4,
   },
 

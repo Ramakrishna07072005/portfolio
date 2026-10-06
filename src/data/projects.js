@@ -77,7 +77,7 @@ export const projects = [
     ],
     contribution:
       "Engineered the complete electrical architecture, designed and soldered the ~10A discrete IRF3205/IR2104 motor driver board, assembled and balanced the 12.6V 36Ah lithium-ion battery pack, and programmed the real-time Arduino Mega motion control firmware.",
-    github: "https://github.com/Ramakrishna-K/iris-robot",
+    github: "https://github.com/Ramakrishna07072005/iris-robot",
     demo: "",
     documentation: "",
     schematicUrl: ""
@@ -127,7 +127,7 @@ export const projects = [
     ],
     contribution:
       "Designed the schematic and PCB layout in EasyEDA/KiCad, calculated bootstrap capacitor ratings and gate resistor damping values, etched/fabricated the prototype board, and experimentally validated switching waveforms using a digital oscilloscope.",
-    github: "https://github.com/Ramakrishna-K/bldc-motor-controller",
+    github: "https://github.com/Ramakrishna07072005/bldc-motor-controller",
     demo: "",
     documentation: "",
     schematicUrl: ""
@@ -176,7 +176,7 @@ export const projects = [
     ],
     contribution:
       "Designed the schematic, routed the compact 2-layer SMD board, programmed the PWM generation and communication firmware, and characterized switching efficiency under load.",
-    github: "https://github.com/Ramakrishna-K/esp32-c3-bldc-driver",
+    github: "https://github.com/Ramakrishna07072005/esp32-c3-bldc-driver",
     demo: "",
     documentation: "",
     schematicUrl: ""
@@ -224,7 +224,7 @@ export const projects = [
     ],
     contribution:
       "Designed the complete electrical circuit, constructed the chassis and fluid nozzle bracket, and programmed the search and extinguishing control algorithms.",
-    github: "https://github.com/Ramakrishna-K/fire-fighting-robot",
+    github: "https://github.com/Ramakrishna07072005/fire-fighting-robot",
     demo: "",
     documentation: "",
     schematicUrl: ""
@@ -272,7 +272,7 @@ export const projects = [
     ],
     contribution:
       "Engineered the mains safety layout, assembled the enclosure, integrated transient snubbers for inductive fan loads, and developed the web dashboard and ESP32 firmware.",
-    github: "https://github.com/Ramakrishna-K/esp32-home-automation",
+    github: "https://github.com/Ramakrishna07072005/esp32-home-automation",
     demo: "",
     documentation: "",
     schematicUrl: ""
@@ -322,7 +322,7 @@ export const projects = [
     ],
     contribution:
       "Designed the input protection clamping circuit, routed the instrument board, calibrated the ADC conversion transfer curves, and implemented the graphical UI display routine.",
-    github: "https://github.com/Ramakrishna-K/diy-digital-multimeter",
+    github: "https://github.com/Ramakrishna07072005/diy-digital-multimeter",
     demo: "",
     documentation: "",
     schematicUrl: ""
@@ -369,7 +369,7 @@ export const projects = [
     ],
     contribution:
       "Engineered the load calculation, built the changeover comparator circuit, wired the dedicated 12V domestic conduit distribution, and continuously maintains system battery health.",
-    github: "https://github.com/Ramakrishna-K/dc-home-power-system",
+    github: "https://github.com/Ramakrishna07072005/dc-home-power-system",
     demo: "",
     documentation: "",
     schematicUrl: ""

@@ -111,7 +111,7 @@ export const siteConfig = {
   },
   socials: {
     linkedin: "https://www.linkedin.com/in/ramakrishna-k-5548b526a",
-    github: "https://github.com/Ramakrishna-K", // Update with your GitHub username
+    github: "https://github.com/Ramakrishna07072005", // Update with your GitHub username
   },
   ...
 };
@@ -159,7 +159,7 @@ Open [`src/data/projects.js`](file:///c:/Users/Ram/Desktop/portfolio/src/data/pr
     "Feature 2: High current switching capability"
   ],
   contribution: "Designed schematic, routed 2-layer PCB, soldered components, and tested with oscilloscope.",
-  github: "https://github.com/Ramakrishna-K/my-new-project",
+  github: "https://github.com/Ramakrishna07072005/my-new-project",
   demo: "",
   documentation: ""
 },
