@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="dmmbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a101d"/>
+      <stop offset="100%" stop-color="#050810"/>
+    </linearGradient>
+    <linearGradient id="dmmCard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#142138"/>
+      <stop offset="100%" stop-color="#0d1626"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="100%" height="100%" fill="url(#dmmbg)"/>
+
+  <!-- Top Header -->
+  <rect x="30" y="25" width="740" height="40" rx="4" fill="#10192a" stroke="#21334f"/>
+  <circle cx="50" cy="45" r="5" fill="#ef4444"/>
+  <circle cx="68" cy="45" r="5" fill="#f59e0b"/>
+  <circle cx="86" cy="45" r="5" fill="#10b981"/>
+  <text x="110" y="50" fill="#cbd5e1" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="600">DIY GRAPHIC DIGITAL MULTIMETER — SCHEMATIC &amp; INSTRUMENTATION</text>
+  <text x="750" y="50" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="end">TEST BENCH</text>
+
+  <!-- Probes & Input Protection -->
+  <rect x="40" y="90" width="200" height="310" rx="6" fill="url(#dmmCard)" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="140" y="120" fill="#f87171" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="bold" text-anchor="middle">PROBES &amp; INPUT STAGE</text>
+  <text x="55" y="150" fill="#cbd5e1" font-family="sans-serif" font-size="11">• Red (+) and Black (-) Probes</text>
+  <text x="55" y="175" fill="#cbd5e1" font-family="sans-serif" font-size="11">• Precision Metal Film Dividers</text>
+  <text x="55" y="200" fill="#cbd5e1" font-family="sans-serif" font-size="11">• 5.1V Zener Clamp Protection</text>
+  <text x="55" y="225" fill="#cbd5e1" font-family="sans-serif" font-size="11">• 100nF Low-Pass Filter Cap</text>
+  <text x="55" y="255" fill="#f87171" font-family="'JetBrains Mono', monospace" font-size="11">MEASUREMENT MODES:</text>
+  <text x="55" y="280" fill="#cbd5e1" font-family="sans-serif" font-size="11">• DC Voltage: 0 – 50V Range</text>
+  <text x="55" y="305" fill="#cbd5e1" font-family="sans-serif" font-size="11">• Resistance: 10Ω – 1MΩ</text>
+  <text x="55" y="330" fill="#cbd5e1" font-family="sans-serif" font-size="11">• Fast Audio Continuity Beep</text>
+  <text x="55" y="360" fill="#fbbf24" font-family="'JetBrains Mono', monospace" font-size="10">Clamped Overvoltage Safe</text>
+
+  <!-- ADC Signal Conditioning & Processing -->
+  <rect x="290" y="90" width="220" height="310" rx="6" fill="url(#dmmCard)" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="400" y="120" fill="#60a5fa" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="bold" text-anchor="middle">ATmega328P / ADC CORE</text>
+  <text x="305" y="150" fill="#cbd5e1" font-family="sans-serif" font-size="11">• 10-Bit Internal ADC</text>
+  <text x="305" y="175" fill="#cbd5e1" font-family="sans-serif" font-size="11">• 64x Sample Oversampling</text>
+  <text x="305" y="200" fill="#cbd5e1" font-family="sans-serif" font-size="11">• Rolling Average Digital Filter</text>
+  <text x="305" y="225" fill="#cbd5e1" font-family="sans-serif" font-size="11">• Auto-Zero Offset Calibration</text>
+  <text x="305" y="255" fill="#60a5fa" font-family="'JetBrains Mono', monospace" font-size="11">SAMPLING RATE:</text>
+  <text x="305" y="280" fill="#cbd5e1" font-family="sans-serif" font-size="11">• 20 Readings / Second</text>
+  <text x="305" y="305" fill="#cbd5e1" font-family="sans-serif" font-size="11">• Jitter Suppressed via Vref</text>
+  <text x="305" y="330" fill="#cbd5e1" font-family="sans-serif" font-size="11">• Sub-Millisecond Continuity</text>
+  <text x="305" y="360" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="10">Active Piezo Buzzer Driver</text>
+
+  <!-- Graphic LCD 128x64 -->
+  <rect x="560" y="90" width="200" height="310" rx="6" fill="url(#dmmCard)" stroke="#10b981" stroke-width="1.5"/>
+  <text x="660" y="120" fill="#34d399" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="bold" text-anchor="middle">128x64 GRAPHIC DISPLAY</text>
+  <text x="575" y="150" fill="#cbd5e1" font-family="sans-serif" font-size="11">• ST7920 Graphic LCD (SPI)</text>
+  <text x="575" y="175" fill="#cbd5e1" font-family="sans-serif" font-size="11">• High-Contrast Monochromatic</text>
+  <text x="575" y="200" fill="#cbd5e1" font-family="sans-serif" font-size="11">• Real-Time Bar Graph Scale</text>
+  <text x="575" y="225" fill="#cbd5e1" font-family="sans-serif" font-size="11">• Large Font Digits for Voltage</text>
+  
+  <!-- Mini Screen Mockup -->
+  <rect x="575" y="250" width="170" height="85" rx="3" fill="#042f2e" stroke="#0d9488"/>
+  <text x="585" y="272" fill="#2dd4bf" font-family="'JetBrains Mono', monospace" font-size="10">VOLTS DC:  12.48 V</text>
+  <rect x="585" y="280" width="150" height="8" rx="2" fill="#134e4a"/>
+  <rect x="585" y="280" width="95" height="8" rx="2" fill="#2dd4bf"/>
+  <text x="585" y="304" fill="#5eead4" font-family="'JetBrains Mono', monospace" font-size="9">RANGE: 0 - 20V</text>
+  <text x="585" y="322" fill="#99f6e4" font-family="'JetBrains Mono', monospace" font-size="9">STATUS: STABLE</text>
+
+  <text x="575" y="360" fill="#34d399" font-family="'JetBrains Mono', monospace" font-size="10">Benchtop Calibration Match</text>
+
+  <!-- Traces -->
+  <path d="M 240 200 L 290 200" stroke="#f87171" stroke-width="2"/>
+  <path d="M 510 200 L 560 200" stroke="#3b82f6" stroke-width="2"/>
+</svg>

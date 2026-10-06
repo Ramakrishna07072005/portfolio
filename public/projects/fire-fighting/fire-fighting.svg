@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="ffbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0e1726"/>
+      <stop offset="100%" stop-color="#080c14"/>
+    </linearGradient>
+    <linearGradient id="ffCard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1b2a47"/>
+      <stop offset="100%" stop-color="#111c30"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="100%" height="100%" fill="url(#ffbg)"/>
+  
+  <!-- Header -->
+  <rect x="30" y="25" width="740" height="40" rx="4" fill="#131e33" stroke="#253553"/>
+  <circle cx="50" cy="45" r="5" fill="#ef4444"/>
+  <circle cx="68" cy="45" r="5" fill="#f59e0b"/>
+  <circle cx="86" cy="45" r="5" fill="#10b981"/>
+  <text x="110" y="50" fill="#cbd5e1" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="600">AUTONOMOUS FIRE-FIGHTING ROBOT — HARDWARE ARCHITECTURE</text>
+  <text x="750" y="50" fill="#ef4444" font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="end">EMBEDDED CONTROL</text>
+
+  <!-- IR Flame Sensors -->
+  <rect x="40" y="90" width="190" height="200" rx="6" fill="url(#ffCard)" stroke="#f97316" stroke-width="1.5"/>
+  <text x="135" y="120" fill="#fb923c" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="bold" text-anchor="middle">OPTICAL IR FLAME SENSORS</text>
+  <text x="55" y="150" fill="#cbd5e1" font-family="sans-serif" font-size="11">• Left Channel (760–1100nm)</text>
+  <text x="55" y="175" fill="#cbd5e1" font-family="sans-serif" font-size="11">• Center Channel (Direct Head)</text>
+  <text x="55" y="200" fill="#cbd5e1" font-family="sans-serif" font-size="11">• Right Channel (Wide Angle)</text>
+  <text x="55" y="235" fill="#f97316" font-family="'JetBrains Mono', monospace" font-size="10">Comparator LM393</text>
+  <text x="55" y="255" fill="#94a3b8" font-family="sans-serif" font-size="10">Analog Intensity + Digital Out</text>
+
+  <!-- Arduino Core -->
+  <rect x="290" y="90" width="220" height="200" rx="6" fill="url(#ffCard)" stroke="#06b6d4" stroke-width="1.5"/>
+  <text x="400" y="120" fill="#22d3ee" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="bold" text-anchor="middle">ARDUINO CONTROL CORE</text>
+  <text x="305" y="150" fill="#cbd5e1" font-family="sans-serif" font-size="11">• Triangulation Heading Math</text>
+  <text x="305" y="175" fill="#cbd5e1" font-family="sans-serif" font-size="11">• Differential Steering Loop</text>
+  <text x="305" y="200" fill="#cbd5e1" font-family="sans-serif" font-size="11">• Distance Throttling Logic</text>
+  <text x="305" y="235" fill="#22d3ee" font-family="'JetBrains Mono', monospace" font-size="10">PWM Locomotion Engine</text>
+  <text x="305" y="255" fill="#94a3b8" font-family="sans-serif" font-size="10">Automatic Target Extinguish</text>
+
+  <!-- Suppression & Locomotion Stages -->
+  <rect x="560" y="90" width="200" height="150" rx="6" fill="url(#ffCard)" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="660" y="120" fill="#60a5fa" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="bold" text-anchor="middle">WATER PUMP ACTUATOR</text>
+  <text x="575" y="150" fill="#cbd5e1" font-family="sans-serif" font-size="11">• 5V Optoisolated Relay</text>
+  <text x="575" y="175" fill="#cbd5e1" font-family="sans-serif" font-size="11">• Submersible High-Flow Pump</text>
+  <text x="575" y="200" fill="#cbd5e1" font-family="sans-serif" font-size="11">• Snubber Flyback Diode</text>
+  <text x="575" y="225" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="10">Suppression Spray Nozzle</text>
+
+  <!-- Chassis Drive -->
+  <rect x="560" y="260" width="200" height="150" rx="6" fill="url(#ffCard)" stroke="#10b981" stroke-width="1.5"/>
+  <text x="660" y="290" fill="#34d399" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="bold" text-anchor="middle">DRIVE LOCOMOTION</text>
+  <text x="575" y="320" fill="#cbd5e1" font-family="sans-serif" font-size="11">• L298N H-Bridge Driver</text>
+  <text x="575" y="345" fill="#cbd5e1" font-family="sans-serif" font-size="11">• 2x Geared DC Motors</text>
+  <text x="575" y="370" fill="#cbd5e1" font-family="sans-serif" font-size="11">• Rubber Grip Drive Wheels</text>
+  <text x="575" y="395" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="10">Dual-Channel Bi-Directional</text>
+
+  <!-- Connectors -->
+  <path d="M 230 180 L 290 180" stroke="#f97316" stroke-width="2"/>
+  <path d="M 510 150 L 560 150" stroke="#3b82f6" stroke-width="2"/>
+  <path d="M 510 210 L 535 210 L 535 330 L 560 330" stroke="#10b981" stroke-width="2"/>
+
+  <!-- Power Supply Block -->
+  <rect x="40" y="320" width="470" height="90" rx="6" fill="#151b28" stroke="#475569"/>
+  <text x="55" y="348" fill="#e2e8f0" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="bold">ISOLATED DUAL POWER SOURCE TOPOLOGY</text>
+  <text x="55" y="372" fill="#94a3b8" font-family="sans-serif" font-size="11">Rail 1: Dedicated 7.4V Li-Po pack with 5V LDO regulation for logic &amp; sensors</text>
+  <text x="55" y="392" fill="#94a3b8" font-family="sans-serif" font-size="11">Rail 2: Independent high-surge battery bus for DC pump and traction motors to eliminate brownout resets</text>
+</svg>

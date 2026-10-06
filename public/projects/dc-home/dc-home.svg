@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="dcbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a121f"/>
+      <stop offset="100%" stop-color="#050a12"/>
+    </linearGradient>
+    <linearGradient id="dcCard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#152640"/>
+      <stop offset="100%" stop-color="#0d192c"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="100%" height="100%" fill="url(#dcbg)"/>
+
+  <!-- Header -->
+  <rect x="30" y="25" width="740" height="40" rx="4" fill="#122036" stroke="#253856"/>
+  <circle cx="50" cy="45" r="5" fill="#ef4444"/>
+  <circle cx="68" cy="45" r="5" fill="#f59e0b"/>
+  <circle cx="86" cy="45" r="5" fill="#10b981"/>
+  <text x="110" y="50" fill="#cbd5e1" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="600">DC HOME — 12V BACKUP POWER DISTRIBUTION &amp; TRANSFER SYSTEM</text>
+  <text x="750" y="50" fill="#f59e0b" font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="end">POWER ELECTRONICS</text>
+
+  <!-- Battery & Charger Stage -->
+  <rect x="40" y="90" width="200" height="310" rx="6" fill="url(#dcCard)" stroke="#ea580c" stroke-width="1.5"/>
+  <text x="140" y="120" fill="#fb923c" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="bold" text-anchor="middle">12V ENERGY STORAGE</text>
+  <text x="55" y="150" fill="#cbd5e1" font-family="sans-serif" font-size="11">• 12V Deep-Cycle Storage Battery</text>
+  <text x="55" y="175" fill="#cbd5e1" font-family="sans-serif" font-size="11">• Regulated Float Charger</text>
+  <text x="55" y="200" fill="#cbd5e1" font-family="sans-serif" font-size="11">• Constant Current / Constant Volt</text>
+  <text x="55" y="225" fill="#cbd5e1" font-family="sans-serif" font-size="11">• Overcharge Auto-Termination</text>
+  <text x="55" y="255" fill="#fb923c" font-family="'JetBrains Mono', monospace" font-size="11">BATTERY HEALTH PROTECTION:</text>
+  <text x="55" y="280" fill="#cbd5e1" font-family="sans-serif" font-size="11">• Float Voltage: 13.6V – 13.8V</text>
+  <text x="55" y="305" fill="#cbd5e1" font-family="sans-serif" font-size="11">• High-Current DC Fuse (20A)</text>
+  <text x="55" y="330" fill="#cbd5e1" font-family="sans-serif" font-size="11">• Temperature Monitored</text>
+  <text x="55" y="360" fill="#ea580c" font-family="'JetBrains Mono', monospace" font-size="10">High Efficiency Chemical Store</text>
+
+  <!-- Auto Transfer & Protection Controller -->
+  <rect x="290" y="90" width="220" height="310" rx="6" fill="url(#dcCard)" stroke="#10b981" stroke-width="1.5"/>
+  <text x="400" y="120" fill="#34d399" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="bold" text-anchor="middle">CONTROLLER &amp; CHANGEOVER</text>
+  <text x="305" y="150" fill="#cbd5e1" font-family="sans-serif" font-size="11">• Automatic Grid Sensing Circuit</text>
+  <text x="305" y="175" fill="#cbd5e1" font-family="sans-serif" font-size="11">• Relay Transfer Switching (ATS)</text>
+  <text x="305" y="200" fill="#cbd5e1" font-family="sans-serif" font-size="11">• Low-Voltage Disconnect (LVD)</text>
+  <text x="305" y="225" fill="#cbd5e1" font-family="sans-serif" font-size="11">• Op-Amp Comparator Reference</text>
+  <text x="305" y="255" fill="#34d399" font-family="'JetBrains Mono', monospace" font-size="11">EFFICIENCY ADVANTAGE:</text>
+  <text x="305" y="280" fill="#cbd5e1" font-family="sans-serif" font-size="11">• Zero DC-to-AC Inversion Losses</text>
+  <text x="305" y="305" fill="#cbd5e1" font-family="sans-serif" font-size="11">• +25% Longer Operating Runtime</text>
+  <text x="305" y="330" fill="#cbd5e1" font-family="sans-serif" font-size="11">• Instant Zero-Dropout Transfer</text>
+  <text x="305" y="360" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="10">Under-Voltage Cutoff @ 10.8V</text>
+
+  <!-- Direct DC Domestic Loads -->
+  <rect x="560" y="90" width="200" height="310" rx="6" fill="url(#dcCard)" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="660" y="120" fill="#fbbf24" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="bold" text-anchor="middle">12V DIRECT DC LOADS</text>
+  <text x="575" y="150" fill="#cbd5e1" font-family="sans-serif" font-size="11">• High-Lumen 12V LED Strips</text>
+  <text x="575" y="175" fill="#cbd5e1" font-family="sans-serif" font-size="11">• Essential Room Luminaires</text>
+  <text x="575" y="200" fill="#cbd5e1" font-family="sans-serif" font-size="11">• 12V DC Brushless Ceiling Fans</text>
+  <text x="575" y="225" fill="#cbd5e1" font-family="sans-serif" font-size="11">• Router &amp; Mobile Charging Bus</text>
+  <text x="575" y="255" fill="#fbbf24" font-family="'JetBrains Mono', monospace" font-size="11">BRANCH PROTECTION:</text>
+  <text x="575" y="280" fill="#cbd5e1" font-family="sans-serif" font-size="11">• Automotive Blade Fuse Block</text>
+  <text x="575" y="305" fill="#cbd5e1" font-family="sans-serif" font-size="11">• Individual Switch Toggles</text>
+  <text x="575" y="330" fill="#cbd5e1" font-family="sans-serif" font-size="11">• Heavy Gauge Copper Conduit</text>
+  <text x="575" y="360" fill="#f59e0b" font-family="'JetBrains Mono', monospace" font-size="10">24/7 Essential Home Reliability</text>
+
+  <!-- Interconnect Traces -->
+  <path d="M 240 200 L 290 200" stroke="#ea580c" stroke-width="2"/>
+  <path d="M 510 200 L 560 200" stroke="#10b981" stroke-width="2"/>
+</svg>

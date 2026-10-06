@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="habg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#090f1d"/>
+      <stop offset="100%" stop-color="#050811"/>
+    </linearGradient>
+    <linearGradient id="haCard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#15243d"/>
+      <stop offset="100%" stop-color="#0e1727"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="100%" height="100%" fill="url(#habg)"/>
+
+  <!-- Title Header -->
+  <rect x="30" y="25" width="740" height="40" rx="4" fill="#111c30" stroke="#233552"/>
+  <circle cx="50" cy="45" r="5" fill="#ef4444"/>
+  <circle cx="68" cy="45" r="5" fill="#f59e0b"/>
+  <circle cx="86" cy="45" r="5" fill="#10b981"/>
+  <text x="110" y="50" fill="#cbd5e1" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="600">ESP32 SMART HOME AUTOMATION &amp; RELAY SYSTEM ARCHITECTURE</text>
+  <text x="750" y="50" fill="#3b82f6" font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="end">IoT &amp; AC MAINS</text>
+
+  <!-- User Clients (Phone / Browser) -->
+  <rect x="40" y="90" width="190" height="150" rx="6" fill="url(#haCard)" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="135" y="118" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="bold" text-anchor="middle">CLIENT INTERFACE</text>
+  <text x="55" y="145" fill="#cbd5e1" font-family="sans-serif" font-size="11">• Responsive Web UI</text>
+  <text x="55" y="170" fill="#cbd5e1" font-family="sans-serif" font-size="11">• Mobile Browser Access</text>
+  <text x="55" y="195" fill="#cbd5e1" font-family="sans-serif" font-size="11">• WebSocket Real-Time Sync</text>
+  <text x="55" y="222" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="10">Bi-Directional Telemetry</text>
+
+  <!-- Physical Switch Matrix -->
+  <rect x="40" y="260" width="190" height="150" rx="6" fill="url(#haCard)" stroke="#a855f7" stroke-width="1.5"/>
+  <text x="135" y="288" fill="#c084fc" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="bold" text-anchor="middle">PHYSICAL WALL SWITCHES</text>
+  <text x="55" y="315" fill="#cbd5e1" font-family="sans-serif" font-size="11">• Standard Toggle Switches</text>
+  <text x="55" y="340" fill="#cbd5e1" font-family="sans-serif" font-size="11">• Hardware Debounce Filter</text>
+  <text x="55" y="365" fill="#cbd5e1" font-family="sans-serif" font-size="11">• Manual State Override</text>
+  <text x="55" y="392" fill="#c084fc" font-family="'JetBrains Mono', monospace" font-size="10">Always Works Offline</text>
+
+  <!-- ESP32 Controller -->
+  <rect x="290" y="90" width="220" height="320" rx="6" fill="url(#haCard)" stroke="#10b981" stroke-width="1.5"/>
+  <text x="400" y="122" fill="#34d399" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="bold" text-anchor="middle">ESP32 DUAL-CORE SOC</text>
+  <text x="305" y="152" fill="#cbd5e1" font-family="sans-serif" font-size="11">• Wi-Fi AP + STA Dual Mode</text>
+  <text x="305" y="178" fill="#cbd5e1" font-family="sans-serif" font-size="11">• Asynchronous Web Server</text>
+  <text x="305" y="204" fill="#cbd5e1" font-family="sans-serif" font-size="11">• Fast GPIO State Detection</text>
+  <text x="305" y="230" fill="#cbd5e1" font-family="sans-serif" font-size="11">• EEPROM / NVS Flash Memory</text>
+  <text x="305" y="256" fill="#cbd5e1" font-family="sans-serif" font-size="11">• Transient Snubber Integration</text>
+  <text x="305" y="295" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="11">Hi-Link AC-DC Step-Down</text>
+  <text x="305" y="315" fill="#94a3b8" font-family="sans-serif" font-size="10">230V AC to 5V DC Isolated Supply</text>
+  <text x="305" y="345" fill="#fbbf24" font-family="'JetBrains Mono', monospace" font-size="10">Power-Cut Memory Restore</text>
+  <text x="305" y="365" fill="#94a3b8" font-family="sans-serif" font-size="10">Retains last known switch state</text>
+
+  <!-- Relays and AC Loads -->
+  <rect x="560" y="90" width="200" height="320" rx="6" fill="url(#haCard)" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="660" y="122" fill="#fbbf24" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="bold" text-anchor="middle">OPTOISOLATED RELAYS</text>
+  <text x="575" y="152" fill="#cbd5e1" font-family="sans-serif" font-size="11">• PC817 Optocouplers</text>
+  <text x="575" y="178" fill="#cbd5e1" font-family="sans-serif" font-size="11">• Songle 10A 250VAC Relays</text>
+  <text x="575" y="204" fill="#cbd5e1" font-family="sans-serif" font-size="11">• Flyback Diode Clamping</text>
+  <text x="575" y="235" fill="#f87171" font-family="'JetBrains Mono', monospace" font-size="11">AC LOADS CONTROLLED:</text>
+  <text x="575" y="260" fill="#cbd5e1" font-family="sans-serif" font-size="11">• Living Room Illumination</text>
+  <text x="575" y="285" fill="#cbd5e1" font-family="sans-serif" font-size="11">• Ceiling Fans &amp; Regulators</text>
+  <text x="575" y="310" fill="#cbd5e1" font-family="sans-serif" font-size="11">• Domestic Power Sockets</text>
+  <text x="575" y="340" fill="#f59e0b" font-family="'JetBrains Mono', monospace" font-size="10">Isolation Gap: &gt;2.5kV</text>
+  <text x="575" y="360" fill="#94a3b8" font-family="sans-serif" font-size="10">PCB Creepage &amp; Clearance</text>
+
+  <!-- Interconnects -->
+  <path d="M 230 160 L 290 160" stroke="#38bdf8" stroke-width="2"/>
+  <path d="M 230 330 L 290 330" stroke="#c084fc" stroke-width="2"/>
+  <path d="M 510 240 L 560 240" stroke="#10b981" stroke-width="2"/>
+</svg>

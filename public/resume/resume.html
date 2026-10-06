@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramakrishna K - Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Source+Sans+3:ital,wght@0,400;0,600;1,400&amp;display=swap" rel="stylesheet">
+    <style>
+        /* ===== RESET AND PAGE SETUP ===== */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        @media print {
+            body {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+                background: #ffffff;
+            }
+            .page {
+                margin: 0 !important;
+                box-shadow: none !important;
+                border-radius: 0 !important;
+                page-break-after: always;
+                page-break-inside: avoid;
+            }
+            .page:last-child {
+                page-break-after: auto;
+            }
+        }
+
+        /* ===== BASE STYLES ===== */
+        body {
+            font-family: 'Source Sans 3', 'Segoe UI', Arial, sans-serif;
+            font-size: 9.5pt;
+            line-height: 1.4;
+            color: #1a1a2e;
+            background: #e8e8e8;
+        }
+
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 20px auto;
+            background: #ffffff;
+            padding: 16mm 18mm 14mm 18mm;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.12);
+            position: relative;
+        }
+
+        /* ===== HEADER ===== */
+        .header {
+            text-align: center;
+            padding-bottom: 8pt;
+            margin-bottom: 8pt;
+            border-bottom: 1.5pt solid #16213e;
+        }
+
+        .header h1 {
+            font-family: 'Inter', sans-serif;
+            font-size: 20pt;
+            font-weight: 700;
+            color: #16213e;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            margin-bottom: 4pt;
+        }
+
+        .contact-row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 4pt 14pt;
+            font-size: 8.5pt;
+            color: #3a3a5a;
+        }
+
+        .contact-row a {
+            color: #1a5276;
+            text-decoration: none;
+        }
+
+        .contact-row a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 3.5pt;
+        }
+
+        .contact-item svg {
+            width: 10px;
+            height: 10px;
+            fill: #16213e;
+            flex-shrink: 0;
+        }
+
+        /* ===== SECTION STYLES ===== */
+        .section {
+            margin-bottom: 8pt;
+        }
+
+        .section-title {
+            font-family: 'Inter', sans-serif;
+            font-size: 10.5pt;
+            font-weight: 700;
+            color: #16213e;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding-bottom: 2.5pt;
+            border-bottom: 1pt solid #c0c0d0;
+            margin-bottom: 5pt;
+        }
+
+        /* ===== EDUCATION ===== */
+        .edu-item {
+            margin-bottom: 4pt;
+        }
+
+        .edu-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .edu-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .edu-degree {
+            font-weight: 600;
+            font-size: 9.5pt;
+            color: #1a1a2e;
+        }
+
+        .edu-date {
+            font-size: 8.5pt;
+            color: #5a5a7a;
+            font-style: italic;
+            white-space: nowrap;
+            flex-shrink: 0;
+            margin-left: 10pt;
+        }
+
+        .edu-school {
+            font-size: 9pt;
+            color: #4a4a6a;
+            margin-top: 0.5pt;
+        }
+
+        .edu-detail {
+            font-size: 8.5pt;
+            color: #5a5a7a;
+            margin-top: 0.5pt;
+        }
+
+        /* ===== SKILLS GRID ===== */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 125pt 1fr;
+            row-gap: 3pt;
+            column-gap: 8pt;
+            font-size: 9pt;
+        }
+
+        .skill-category {
+            font-weight: 600;
+            color: #16213e;
+        }
+
+        .skill-values {
+            color: #3a3a5a;
+        }
+
+        /* ===== PROJECTS / EXPERIENCE ===== */
+        .entry {
+            margin-bottom: 6pt;
+        }
+
+        .entry:last-child {
+            margin-bottom: 0;
+        }
+
+        .entry-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .entry-title {
+            font-weight: 600;
+            font-size: 9.5pt;
+            color: #1a1a2e;
+        }
+
+        .entry-date {
+            font-size: 8.5pt;
+            color: #5a5a7a;
+            font-style: italic;
+            white-space: nowrap;
+            flex-shrink: 0;
+            margin-left: 10pt;
+        }
+
+        .entry-bullets {
+            margin-top: 2pt;
+            padding-left: 12pt;
+            list-style: none;
+        }
+
+        .entry-bullets li {
+            font-size: 9pt;
+            line-height: 1.35;
+            color: #2a2a4a;
+            margin-bottom: 1.5pt;
+            position: relative;
+            padding-left: 0;
+        }
+
+        .entry-bullets li::before {
+            content: "\25B8";
+            color: #16213e;
+            font-size: 7.5pt;
+            position: absolute;
+            left: -10pt;
+            top: 0.5pt;
+        }
+
+        /* ===== SIMPLE LIST ===== */
+        .simple-list {
+            padding-left: 12pt;
+            list-style: none;
+        }
+
+        .simple-list li {
+            font-size: 9pt;
+            line-height: 1.35;
+            color: #2a2a4a;
+            margin-bottom: 2.5pt;
+            position: relative;
+        }
+
+        .simple-list li::before {
+            content: "\25B8";
+            color: #16213e;
+            font-size: 7.5pt;
+            position: absolute;
+            left: -10pt;
+            top: 0.5pt;
+        }
+
+        .highlight {
+            font-weight: 600;
+            color: #1a1a2e;
+        }
+
+        /* ===== LANGUAGE PILLS ===== */
+        .lang-row {
+            display: flex;
+            gap: 8pt;
+            margin-top: 3pt;
+        }
+
+        .lang-pill {
+            font-size: 9pt;
+            color: #2a2a4a;
+            padding: 1.5pt 8pt;
+            border: 1pt solid #c0c0d0;
+            border-radius: 8pt;
+        }
+
+        /* ===== PAGE 2 ADJUSTMENTS ===== */
+        .page-2 {
+            padding-top: 16mm;
+        }
+
+        /* ===== PRINT BUTTON ===== */
+        .print-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #16213e;
+            color: white;
+            border: none;
+            padding: 12px 28px;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(22, 33, 62, 0.3);
+            transition: all 0.2s;
+            z-index: 100;
+        }
+
+        .print-btn:hover {
+            background: #1a5276;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(22, 33, 62, 0.4);
+        }
+
+        @media print {
+            .print-btn { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ==================== PAGE 1 ==================== -->
+<div class="page">
+
+    <!-- HEADER -->
+    <div class="header">
+        <h1>Ramakrishna K</h1>
+        <div class="contact-row">
+            <span class="contact-item">
+                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                Marakkanam, Tamil Nadu, India
+            </span>
+            <span class="contact-item">
+                <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                <a href="mailto:ram6electronics@gmail.com">ram6electronics@gmail.com</a>
+            </span>
+            <span class="contact-item">
+                <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                <a href="tel:+919342245369">+91-9342245369</a>
+            </span>
+            <span class="contact-item">
+                <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+                <a href="https://www.linkedin.com/in/ramakrishna-k-5548b526a" target="_blank">linkedin.com/in/ramakrishna-k</a>
+            </span>
+        </div>
+    </div>
+
+    <!-- OBJECTIVE -->
+    <div class="section">
+        <div class="section-title">Objective</div>
+        <p style="font-size: 9.5pt; color: #2a2a4a;">
+            M.Tech student specializing in VLSI and Embedded Systems, with a B.Tech in Electronics and Communication Engineering. Experienced in embedded hardware, PCB design, robotics, IoT, and power electronics &#8212; developing electronic systems from concept to working prototype, with a strong interest in hardware design and VLSI technologies.
+        </p>
+    </div>
+
+    <!-- EDUCATION -->
+    <div class="section">
+        <div class="section-title">Education</div>
+
+        <div class="edu-item">
+            <div class="edu-row">
+                <span class="edu-degree">M.Tech &#8212; VLSI and Embedded Systems</span>
+                <span class="edu-date">Aug 2026 &#8211; Present</span>
+            </div>
+            <div class="edu-school">Pondicherry Technological University (PTU), Puducherry</div>
+        </div>
+
+        <div class="edu-item">
+            <div class="edu-row">
+                <span class="edu-degree">B.Tech &#8212; Electronics and Communication Engineering</span>
+                <span class="edu-date">Aug 2022 &#8211; May 2026</span>
+            </div>
+            <div class="edu-school">Achariya College of Engineering and Technology, Puducherry</div>
+            <div class="edu-detail">CGPA: 8.46 / 10 &#8212; First Class</div>
+        </div>
+
+        <div class="edu-item">
+            <div class="edu-row">
+                <span class="edu-degree">Higher Secondary Certificate (HSC)</span>
+                <span class="edu-date">May 2022</span>
+            </div>
+            <div class="edu-school">Sri Ramakrishna Matric Higher Secondary School &#8212; CGPA: 7.5 / 10</div>
+        </div>
+
+        <div class="edu-item">
+            <div class="edu-row">
+                <span class="edu-degree">Secondary School Leaving Certificate (SSLC)</span>
+                <span class="edu-date">Apr 2020</span>
+            </div>
+            <div class="edu-detail">CGPA: 7.5 / 10</div>
+        </div>
+    </div>
+
+    <!-- TECHNICAL SKILLS -->
+    <div class="section">
+        <div class="section-title">Technical Skills</div>
+        <div class="skills-grid">
+            <span class="skill-category">Microcontrollers</span>
+            <span class="skill-values">Arduino, ESP32, ESP8266, STM32, Raspberry Pi</span>
+
+            <span class="skill-category">PCB Design</span>
+            <span class="skill-values">EasyEDA, KiCad</span>
+
+            <span class="skill-category">Simulation Tools</span>
+            <span class="skill-values">Proteus, Multisim</span>
+
+            <span class="skill-category">Embedded Software</span>
+            <span class="skill-values">Arduino IDE, Keil &#181;Vision</span>
+
+            <span class="skill-category">Programming</span>
+            <span class="skill-values">C, Embedded C</span>
+
+            <span class="skill-category">Hardware Design</span>
+            <span class="skill-values">Schematic Design, Circuit Debugging, Sensor Interfacing, Prototyping</span>
+
+            <span class="skill-category">Power Electronics</span>
+            <span class="skill-values">DC&#8211;DC Converters, MOSFET Switching, Motor Drivers, Battery Systems</span>
+
+            <span class="skill-category">Testing &amp; Tools</span>
+            <span class="skill-values">Oscilloscope, Digital Multimeter, Soldering, Troubleshooting</span>
+        </div>
+    </div>
+
+    <!-- PROJECTS -->
+    <div class="section">
+        <div class="section-title">Projects</div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">IRIS &#8212; Intelligent Robot with Integrated Sensors</span>
+            </div>
+            <ul class="entry-bullets">
+                <li>Developing an autonomous indoor college robot for human interaction and lightweight document delivery.</li>
+                <li>Integrated Intel i7 onboard computer, Arduino Mega, webcam, ultrasonic sensors, LCD, speaker, and servo-actuated head and arms.</li>
+                <li>Designed a custom high-current motor driver using IRF3205 MOSFETs and IR2104 gate drivers for differential-drive motors.</li>
+                <li>Implemented sensor interfacing, robotic motion control, human interaction, and AI-assisted functionality.</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">Fire-Fighting Robot using Arduino</span>
+            </div>
+            <ul class="entry-bullets">
+                <li>Built a compact robot that detects fire using IR sensors and activates a water pump through Arduino-based control.</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">Smart Home Automation using ESP32</span>
+            </div>
+            <ul class="entry-bullets">
+                <li>Developed a Wi-Fi-based appliance control system using ESP32 with mobile-based manual and automated switching.</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">DIY Digital Multimeter</span>
+            </div>
+            <ul class="entry-bullets">
+                <li>Designed an Arduino-based digital multimeter with GLCD interface for voltage, resistance, and continuity measurements.</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">DC Home &#8212; 12V Backup Power System</span>
+            </div>
+            <ul class="entry-bullets">
+                <li>Developed a 12V rechargeable backup system for essential home loads including LED lighting and DC fans with automatic/manual power switching.</li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+<!-- ==================== PAGE 2 ==================== -->
+<div class="page page-2">
+
+    <!-- INTERNSHIPS -->
+    <div class="section">
+        <div class="section-title">Internships &amp; Training</div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">R&amp;D Intern &#8212; Chozha Win Technology, Puducherry</span>
+                <span class="entry-date">Apr 2026 &#8211; Present</span>
+            </div>
+            <ul class="entry-bullets">
+                <li>Working in hardware design and development for defence-oriented electronic systems.</li>
+                <li>Involved in practical circuit development, testing, debugging, and hardware implementation.</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">Industrial Exposure &#8212; Rane Madras Pvt. Ltd.</span>
+                <span class="entry-date">Apr 2025</span>
+            </div>
+            <ul class="entry-bullets">
+                <li>Gained hands-on exposure to PLC-based industrial automation and automotive manufacturing processes.</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">IoT Internship</span>
+                <span class="entry-date">Dec 2024 &#8211; Mar 2025</span>
+            </div>
+            <ul class="entry-bullets">
+                <li>Worked on sensor interfacing, data logging, and cloud connectivity for IoT-based applications.</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">Embedded/IoT Training &#8212; MSME, Kalapet, Puducherry</span>
+                <span class="entry-date">Aug 2025</span>
+            </div>
+            <ul class="entry-bullets">
+                <li>Received hands-on training in microcontrollers, IoT integration, and embedded system development.</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">PLC Training &#8212; MSME, Kalapet, Puducherry</span>
+                <span class="entry-date">Sep 2025</span>
+            </div>
+            <ul class="entry-bullets">
+                <li>Learned PLC programming, industrial automation concepts, and practical control-system applications.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- WORKSHOPS -->
+    <div class="section">
+        <div class="section-title">Workshops</div>
+        <ul class="simple-list">
+            <li>Conducted a <span class="highlight">Basics of Electronics Workshop</span> &#8212; covering component testing, circuit design, and breadboarding.</li>
+            <li>Conducted a <span class="highlight">PCB Design and Fabrication Workshop</span> at ACET &#8212; practical training in single-layer PCB design and etching.</li>
+        </ul>
+    </div>
+
+    <!-- CERTIFICATIONS -->
+    <div class="section">
+        <div class="section-title">Certifications</div>
+        <ul class="simple-list">
+            <li><span class="highlight">NPTEL &#8212; Introduction to IoT:</span> 83% &#8212; Elite + Silver Medal</li>
+            <li><span class="highlight">NPTEL &#8212; Introduction to Industrial IoT (Industry 4.0):</span> 86% &#8212; Elite + Silver Medal</li>
+        </ul>
+    </div>
+
+    <!-- HACKATHONS -->
+    <div class="section">
+        <div class="section-title">Hackathons</div>
+        <ul class="simple-list">
+            <li><span class="highlight">Atom Quest 2025 Hackathon &#8212; Atomberg:</span> Selected for the Semi-Final Round among 18,000+ participants nationwide.</li>
+        </ul>
+    </div>
+
+    <!-- ACHIEVEMENTS -->
+    <div class="section">
+        <div class="section-title">Achievements</div>
+        <ul class="simple-list">
+            <li>Built and showcased the IRIS robotic platform in technical exhibitions and academic demonstrations.</li>
+            <li>Designed and fabricated a custom motor driver capable of handling ~10A continuous current for IRIS.</li>
+            <li>Built a 12.6V 36Ah lithium-ion battery pack by repurposing recovered laptop cells for the IRIS robot.</li>
+            <li>Designed and maintained a 12V DC home backup power system for essential loads.</li>
+        </ul>
+    </div>
+
+    <!-- LANGUAGES -->
+    <div class="section">
+        <div class="section-title">Languages</div>
+        <div class="lang-row">
+            <span class="lang-pill">English</span>
+            <span class="lang-pill">Tamil</span>
+        </div>
+    </div>
+
+</div>
+
+<button class="print-btn" onclick="window.print()">Save as PDF</button>
+
+</body>
+</html>
